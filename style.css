@@ -1,0 +1,130 @@
+/*
+Colors:
+   backgroud: #dee2e6
+   borders: #f08c00
+   text: #333, #2b8a3e
+*/
+
+/*-------GENERAL-------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-recipe {
+  background-color: #dee2e6;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.container {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.description,
+.ingredients,
+.procedure {
+  border: 1px solid #f08c00;
+  border-radius: 5px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.primary-heading {
+  font-size: 3rem;
+  margin-top: 0.4rem;
+}
+
+/*-------HEADER-------*/
+
+.author {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/*-------RECIPE SECTION-------*/
+
+.description {
+  width: 60%;
+}
+
+.description-list,
+.ingredients-list {
+  margin-top: 1.6rem;
+  margin-left: 2.4rem;
+}
+
+.description-item-time,
+.description-item-diff {
+  font-weight: bold;
+}
+
+.description-item-diff {
+  color: #2b8a3e;
+}
+
+.ingredients {
+  width: 40%;
+}
+
+.ingredients-servings {
+  font-weight: normal;
+}
+
+/*-------IMGs SECTION-------*/
+
+.img1,
+.img2 {
+  height: 40%;
+  width: 40%;
+}
+
+.centered {
+  justify-content: center;
+}
+
+/*-------PROCEDURE SECTION-------*/
+
+.procedure {
+  margin-top: 1.6rem;
+}
+
+.procedure-list {
+  list-style: none;
+  counter-reset: item;
+  margin-top: 1rem;
+}
+
+.procedure-item {
+  counter-increment: item;
+  margin-bottom: 0.5rem;
+}
+
+.procedure-item:before {
+  padding: 1rem;
+  margin-right: 1rem;
+  content: counter(item);
+  border: 1px solid #f08c00;
+  border-radius: 100%;
+  width: 1.2rem;
+  text-align: center;
+  display: inline-block;
+}
